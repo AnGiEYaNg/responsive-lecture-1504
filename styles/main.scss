@@ -1,0 +1,52 @@
+@import "media-queries";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#desktop-banner {
+  background: #ff0e0e;
+  @include tabletView() {
+    display: none;
+  }
+  @include mobileView() {
+    display: none;
+  }
+}
+
+#mobile-banner {
+  background: #2b47ff;
+  display: none;
+  @include mobileView() {
+    display: block;
+  }
+}
+
+#tablet-banner {
+  background: #98ff35;
+  display: none;
+  @include tabletView() {
+    display: block;
+  }
+}
+
+img {
+  float: left;
+  width: 50%;
+  border: 2px solid black;
+  @include mobileView() {
+    float: none;
+    width: 100%;
+  }
+}

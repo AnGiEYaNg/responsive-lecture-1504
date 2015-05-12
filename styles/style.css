@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.banner {
+  color: white;
+  padding: 10px;
+  margin: 0; }
+
+#desktop-banner {
+  background: #ff0e0e; }
+  @media (max-width: 900px) and (min-width: 600px) {
+    #desktop-banner {
+      display: none; } }
+  @media (max-width: 600px) {
+    #desktop-banner {
+      display: none; } }
+
+#mobile-banner {
+  background: #2b47ff;
+  display: none; }
+  @media (max-width: 600px) {
+    #mobile-banner {
+      display: block; } }
+
+#tablet-banner {
+  background: #98ff35;
+  display: none; }
+  @media (max-width: 900px) and (min-width: 600px) {
+    #tablet-banner {
+      display: block; } }
+
+img {
+  float: left;
+  width: 50%;
+  border: 2px solid black; }
+  @media (max-width: 600px) {
+    img {
+      float: none;
+      width: 100%; } }
